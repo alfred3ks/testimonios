@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;600;700&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html,
+body {
+	font-family: 'Comfortaa', cursive;
+	font-size: 18px;
+	background-color: #f5f6f7;
+}
