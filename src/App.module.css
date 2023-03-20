@@ -35,5 +35,6 @@ h1 {
 	h1 {
 		max-width: 700px;
 		font-size: 1.3em;
+		padding: 7px;
 	}
 }

@@ -7,7 +7,7 @@
 	align-items: center;
 	justify-content: center;
 	background-color: #ffffff;
-	box-shadow: 0 3px 13px 1px rgba(0, 0, 0, 0.9);
+	box-shadow: 0 3px 13px 1px rgba(0, 0, 0, 0.3);
 }
 
 .imagenTestimonio {
@@ -67,7 +67,8 @@
 	.contenedorTestimonio {
 		flex-direction: column;
 		padding: 0;
-		margin: 0;
+		margin: 5px;
+		box-shadow: none;
 	}
 
 	.imagenTestimonio {

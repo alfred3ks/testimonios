@@ -1,24 +1,32 @@
 /* eslint-disable react/prop-types */
 import style from './Testimonio.module.css';
+import testimonios from '../data';
 
-const Testimonio = (props) => {
+const Testimonio = () => {
 	return (
-		<div className={style.contenedorTestimonio}>
-			<img
-				className={style.imagenTestimonio}
-				src={`../img/${props.imagen}.png`}
-				alt={`Imagen de ${props.nombre}`}
-			/>
-			<div className={style.contenedorTextoTestimonio}>
-				<h2 className={style.nombreTestimonio}>
-					{props.nombre} en {props.pais}
-				</h2>
-				<p className={style.cargoTestimonio}>
-					<strong>{props.cargo}</strong> en <strong>{props.empresa}</strong>
-				</p>
-				<p className={style.textoTestimonio}>{props.testimonio}</p>
-			</div>
-		</div>
+		<>
+			{testimonios.map((testimonio) => {
+				return (
+					<div className={style.contenedorTestimonio} key={testimonio.nombre}>
+						<img
+							className={style.imagenTestimonio}
+							src={`../img/${testimonio.imagen}.png`}
+							alt={`Imagen de ${testimonio.nombre}`}
+						/>
+						<div className={style.contenedorTextoTestimonio}>
+							<h2 className={style.nombreTestimonio}>
+								{testimonio.nombre} en {testimonio.pais}
+							</h2>
+							<p className={style.cargoTestimonio}>
+								<strong>{testimonio.cargo}</strong> en{' '}
+								<strong>{testimonio.empresa}</strong>
+							</p>
+							<p className={style.textoTestimonio}>{testimonio.testimonio}</p>
+						</div>
+					</div>
+				);
+			})}
+		</>
 	);
 };
 
