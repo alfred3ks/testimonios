@@ -10,7 +10,7 @@ const Testimonio = () => {
 					<div className={style.contenedorTestimonio} key={testimonio.nombre}>
 						<img
 							className={style.imagenTestimonio}
-							src={`../img/${testimonio.imagen}.png`}
+							src={`./img/${testimonio.imagen}.png`}
 							alt={`Imagen de ${testimonio.nombre}`}
 						/>
 						<div className={style.contenedorTextoTestimonio}>
